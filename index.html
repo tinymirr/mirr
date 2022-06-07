@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>aergoscan</title>
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="/assets/css/common.css" rel="stylesheet">
+  <link href="/assets/css/index.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="page-container">
+      <div class="wrap">
+        <div id="category" class="main">
+          <div class="header">
+            <div class="header-inner"> <!--max-width: 1920px-->
+              <div class="header-content"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                <div class="logo"><img src="/assets/images/logo.png"></div>
+                <div class="app-dl-link">
+                    <a href="javascript:;" onclick="moveToAppLink()">
+                      더블유클럽 앱 다운로드 <span class="icon"><img src="/assets/images/shape.png"></span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category-inner">
+            <div class="page-wrap">
+              <div class="page-content">
+                <section class="section-1"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="banner-image">
+                      <img src="/assets/images/banner-1.png">
+                    </div>
+                    <div class="title">
+                      당신이 모르는 사이,
+                      <br>
+                      <span class="focus">매달 5천건</span> 이상
+                      <br>
+                      <span class="focus">남녀 만남이 이루어지는 곳</span>
+                    </div>
+                    <div class="sub-title">
+                      검증된 이성을 스스로 만날 수 있는 분은
+                      <br>
+                      나가셔도 좋습니다.
+                    </div>
+                    <div class="btn-group">
+                      <button onclick="window.open('https://wclub.co.kr/iosstore','_blank');">앱 스토어 다운받기</button>
+                      <button onclick="window.open('https://wclub.co.kr/androidstore','_blank');">구글 플레이 다운받기</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-2"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="statistics">
+                      <div class="item">
+                        <div class="title">누적 다운로드</div>
+                        <div class="value">10만 회 이상</div>
+                      </div>
+                      <div class="item">
+                        <div class="title">하루 평균 만남</div>
+                        <div class="value">150건</div>
+                      </div>
+                      <div class="item">
+                        <div class="title">월 평균 만남</div>
+                        <div class="value">5,000건</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-3"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200">
+                      인연은 저절로 찾아오지 않습니다.
+                    </div>
+                    <div class="title" data-aos="fade-up" data-aos-delay="200">
+                      나보다 잘난 이성 <br class="visible-640">만나는 확실한 방법
+                    </div>
+                    <div class="member-sample" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card">
+                        <div class="image">
+                          <div class="image-inner">
+                            <img src="/assets/images/220213_W-Club-1343_1.png">
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="title">
+                              유쾌한 성격의
+                              <br>
+                              연매출 억대연봉 사업가
+                            </div>
+                            <div class="sub-title">
+                              30대 초반 / 유학파 출신 / 서울
+                            </div>
+                            <div class="desc">
+                              연매출 100억 규모의 IT 벤처기업을
+                              <br>
+                              운영하고 있는 사업가 회원입니다.
+                              <br>
+                              유머러스하고 유쾌한 성격이 매력적인 분입니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="icon">
+                        <img src="/assets/images/icon-1.png">
+                      </div>
+                      <div class="card">
+                        <div class="image">
+                          <div class="image-inner">
+                            <img src="/assets/images/220213_W-Club-0634_1.png">
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="title">
+                              웃는 모습이 예쁜
+                              <br>
+                              모델출신 회사원
+                            </div>
+                            <div class="sub-title">
+                              94년생 / 165cm / 대학교 졸업
+                            </div>
+                            <div class="desc">
+                              밝고 여성스러운 분위기에 슬림한 체형을 가진 회원입니다.
+                              <br class="hidden-1080">
+                              성격은 여성스럽고 차분하며 웃는 모습이 예쁜 분입니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <span class="focus">*</span>최근에 더블유클럽에서 실제로 매칭이 성사된 사례로 구성했습니다.
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-4">
+                  <div class="section-inner">
+                    <div class="banner-image">
+                      <img src="/assets/images/mFSr4aXp1mg-HD_1.png" class="pc">
+                      <img src="/assets/images/mFSr4aXp1mg-HD_1-m.png" class="m">
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-5"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="banner-txt">
+                      <div class="sub-title sub-1">
+                        더블유클럽 가입조건
+                      </div>
+                      <div class="title">
+                        죄송합니다. <span class="focus">그저 그런 사람은 <br class="visible-640">가입할 수 없습니다.</span>
+                      </div>
+                      <div class="sub-title sub-2">
+                        W Club에는 까다로운 가입절차가 있습니다. 
+                        <br>
+                        컨시어지가 엄격한 심사를 통해 <br class="visible-640">능력과 매력이 검증된 분들만 승인해 드립니다.
+                      </div>
+                    </div>
+                    <div class="intro">
+                      <div class="bub-txt">데이팅 앱, 마음에 안드는 이성만 넘쳐나는 이유?</div>
+                      <div class="logo-n-txt">
+                        <div class="logo">
+                          <img src="/assets/images/logo-2.png">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="txt">
+                          이유는 간단해요. <br class="visible-640">대부분의 데이팅앱은 단 3초만에 가입 승인이 끝나기 때문이죠.
+                          <br>
+                          가입 절차가 간편해야 더 많은 앱 사용자를 모을 수 있으니까요.
+                          <br>
+                          <br>
+                          더블유클럽은 더 많은 앱 사용자를 모으려고 하지 않아요.
+                          <br>
+                          여러분에게 어울리는 검증된 이성을 매칭해 드리는 게 목표입니다. 
+                          <br>
+                          <br>
+                          <span class="focus">그래서 오히려 가입절차를 더 까다롭게 만들었어요.</span>
+                          <br>
+                          ‘아무나’, ‘많이’ 매칭만 되고 채팅만 실컷 하고 싶으신 분들은 정중히 거절합니다.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="intro-sample">
+                      <div class="card-group">
+                        <div class="card">
+                          <div class="title">
+                            <div class="title-inner">
+                              <div class="icon"><img src="/assets/images/check-small.png"></div>
+                              <div class="txt">능력과 매너를 갖춘 남성</div>
+                            </div>
+                          </div>
+                          <div class="image">
+                            <div class="image-inner">
+                              <img src="/assets/images/phone.png">
+                              <img src="/assets/images/document.png" class="sub">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="content-inner">
+                              <ul>
+                                <li>
+                                  <span class="icon"><img src="/assets/images/check-small-bk.png"></span>
+                                  <span class="focus">능력형 프로필 :</span> <br class="visible-640">서류 인증을 통해 직업, 능력 인증 + 자기소개글
+                                </li>
+                                <li>
+                                  <span class="icon"><img src="/assets/images/check-small-bk.png"></span>
+                                  <span class="focus">외모형 프로필 :</span> <br class="visible-640">사진 3장 이상으로 외모 매력 인증 + 자기소개글
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="title">
+                            <div class="title-inner">
+                              <div class="icon"><img src="/assets/images/check-small.png"></div>
+                              <div class="txt">미모 또는 지성을 갖춘 여성</div>
+                            </div>
+                          </div>
+                          <div class="image">
+                            <div class="image-inner">
+                              <img src="/assets/images/phone.png">
+                              <img src="/assets/images/profile.png" class="sub-2">
+                            </div>
+                          </div>
+                          <div class="content">
+                            <div class="content-inner">
+                              <ul>
+                                <li>
+                                  <span class="icon"><img src="/assets/images/check-small-bk.png"></span>
+                                  <span class="focus">외모형 프로필 :</span> <br class="visible-640">사진 6장, 셀피 동영상으로 매력 인증 + 자기소개글
+                                </li>
+                                <li>
+                                  <span class="icon"><img src="/assets/images/check-small-bk.png"></span>
+                                  <span class="focus">능력형 프로필 :</span> <br class="visible-640">서류 인증으로 직업, 경제력, 집안 인증 + 자기소개글
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-6">
+                  <div class="section-inner">
+                    <div class="banner-slide">
+                      <div class="image">
+                        <div class="btn-group">
+                          <div class="btn-prev" onclick="prevCard()"><img src="/assets/images/btn-prev-bk.png"></div>
+                          <div class="btn-next"  onclick="nextCard()"><img src="/assets/images/btn-next.png" class="wh"><img src="/assets/images/btn-next-bk.png" class="bk"></div>
+                        </div>
+                        <img src="/assets/images/banner-2.png" class="pc">
+                        <img src="/assets/images/banner-14.png" class="m">
+                      </div>
+                      <div class="slider">
+                        <div class="btn-group">
+                          <div class="btn-prev" onclick="prevCard()"><img src="/assets/images/btn-prev-bk.png"></div>
+                          <div class="btn-next"  onclick="nextCard()"><img src="/assets/images/btn-next.png" class="wh"><img src="/assets/images/btn-next-bk.png" class="bk"></div>
+                        </div>
+                        <div class="slider-inner">
+                          <div class="slide active show">
+                            <div class="sub-title">
+                              고객님의 진짜 후기
+                            </div>
+                            <div class="title">
+                              ‘이 사람을 놓치고 싶지 않다’는
+                              <br>
+                              생각이 들어 고백을 했습니다.
+                            </div>
+                            <div class="desc">
+                              컨시어지님, 안녕하세요.
+                              <br>
+                              W Club을 통해 정말 만나고 싶던 좋은 분을 만나게 됐어요.
+                              <br>
+                              좋은 감정을 가지고 행복한 시간을 보내면서
+                              <br>
+                              <span class="focus">‘이 사람을 놓치고 싶지 않다’</span>는 생각이 들어 고백을 했습니다.
+                              <br>
+                              고맙게도, 마음을 받아주어
+                              <br>
+                              오랫동안 진실되게 잘 만나보자는 약속을 했습니다.
+                              <br>
+                              고맙습니다. 좋은 인연을 만들어 주셔서.
+                            </div>
+                            <div class="comment">
+                              모델출신 20대여성
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="sub-title">
+                              고객님의 진짜 후기
+                            </div>
+                            <div class="title">
+                              타 시스템이 패스트푸드라면
+                              <br>
+                              W Club은 미슐랭입니다.
+                            </div>
+                            <div class="desc">
+                              더블유클럽을 사용하며 인상 깊었던 점은 소개와 매칭 단계마다 거의 떠먹여주다시피
+                              <br>
+                              주지시켜 주셔서 만남에 한층 더 진지하게 임하게 됩니다.
+                              <br>
+                              상대에 대한 선입견이 최소화되는 효과도 있습니다.
+                              <br>
+                              프로필 사진이랑 소개글 바로바로 바꿀 수 있는것도 좋아요.
+                              <br>
+                              W클럽이 더 커져서 결정사 죄다 망하면 어쩌나요? 
+                              <br>
+                              <br>
+                              타 시스템이 패스트푸드라면 W Club은 미슐랭입니다.
+                              <br>
+                              책임감이 느껴져 신뢰가 가는.. 접근성은 다소 떨어지지만 퀄리티 확실한 면이 강점이라
+                              <br>
+                              처음 취지대로 오래 유지됐으면 해요. 매칭이 쉽진 않은데
+                              <br>
+                              지금 소개받는 분들 대부분 만족해 프로필 수정도 하면서 천천히 보고 있어요.
+                              <br>
+                              <br>
+                              이보다 편리하고 회원 관리 잘 되는 서비스가 있을까 싶어요.
+                              <br>
+                              만남시 매너, 신뢰, 능력을 중요하게 생각하면 거의 모두가 만족할 듯 합니다.
+                            </div>
+                            <div class="comment">
+                              여성회원 후기
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="sub-title">
+                              고객님의 진짜 후기
+                            </div>
+                            <div class="title">
+                              미혼인 친구랑 남동생에게
+                              <br>
+                              강력추천했습니다.
+                            </div>
+                            <div class="desc">
+                              더블유클럽은 미혼 청춘남녀들을 위해 차별화된 아주 만족스러운 앱이라고 생각됩니다.
+                              <br>
+                              정말 진지한 만남을 할 수 있어 좋았고,
+                              <br>
+                              또 컨시어저님께서 제 이상형을 어떻게 알고 매칭시켜 주셨는지 감탄할 따름입니다. 
+                              <br>
+                              <br>
+                              너무너무 아름다운분, 게다가 성격이랑 마음씨도 좋으신 분
+                              <br>
+                              매칭시켜주셔서 무한 감사드려요.
+                              <br>
+                              매칭소개에서 만남까지 더이상 만족할 수 없을만큼 완벽히 지원해 주셔서
+                              <br>
+                              안내문자 받을때마다 설레었네요. 미혼인 친구랑 남동생에게 강력추천 했습니다.
+                              <br>
+                              W클럽은 번창할수밖에 없을 것 같아요.ㅎ
+                              <br>
+                              일단 가입해 보시길 강력추천 합니다.
+                            </div>
+                            <div class="comment">
+                              남성회원 후기
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="sub-title">
+                              고객님의 진짜 후기
+                            </div>
+                            <div class="title">
+                              다른 앱이랑은 다르게 정말 프라이빗하게
+                              <br>
+                              잘 관리되고 운영되고 있다는 느낌을 받았습니다.
+                            </div>
+                            <div class="desc">
+                              올해부터 결혼을 해야겠다고 마음먹고, 한두달전부터 소개팅도 받고 다른 앱도 이용해보고,
+                              <br>
+                              비싼 금액을 내고 결혼정보회사까지 등록해봤습니다. 하지만 결정사에서 만족스런 분 소개와
+                              <br>
+                              세심한 서비스 케어가 부족한 부분이 있어 환불받고 해지를 했습니다.
+                              <br>
+                              그러다가 w클럽을 알게되어 몇통의 프로필을 받고 첫 만남까지 진행하게 되었는데
+                              <br>
+                              전반적인 서비스 과정에 매우 만족합니다.
+                              <br>
+                              <br>
+                              특히나 소개해주시는 분들의 프로필도 한분 한분 정성스럽게 엄선되어있다는
+                              <br>
+                              느낌을 받았고, 매칭이 성사되고 만남 약속을 잡고나서 확인 메시지를
+                              <br>
+                              당일까지 포함하여 몇 차례 주고 받아야 한다는 점은
+                              <br>
+                              약속이 불발될 수 있는 점을 철저하게 미연에 방지해주어서 굉장히 좋았습니다.
+                              <br>
+                              지각에 대한 주의사항 공지를 주는 것도 인상 깊었습니다.
+                              <br>
+                              <br>
+                              이번에 서비스 이용하면서 신뢰가 많이 쌓였고 안심이 되었습니다.
+                              <br>
+                              다른 앱이랑은 다르게 정말 프라이빗하게 잘 관리되고 운영되고 있다는 느낌을 받았습니다.
+                              <br>
+                              여러모로 애써주시고 신경써주셔서 감사합니다. 담당자님, 앞으로도 잘 부탁드리겠습니다.
+                            </div>
+                            <div class="comment">
+                              여성회원 후기
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-7"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="intro" data-aos="fade-up" data-aos-delay="200">
+                      <div class="sub-title">
+                        더블유클럽 FULL CARE 서비스
+                      </div>
+                      <div class="title">
+                        더블유클럽에서는 어떻게
+                        <br>
+                        100% 만남이 가능할까요?
+                      </div>
+                      <div class="content">
+                        <ul>
+                          <li>
+                            <span class="icon"><img src="/assets/images/check-small.png"></span>
+                            프로필을 분석하여 이상형을 매칭해 드리는 일도,
+                          </li>
+                          <li>
+                            <span class="icon"><img src="/assets/images/check-small.png"></span>
+                            약속 장소와 시간을 조율하는 일도,
+                          </li>
+                          <li>
+                            <span class="icon"><img src="/assets/images/check-small.png"></span>
+                            만남 이후의 피드백을 받는 일도,
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="desc">
+                        <span class="focus">앱 화면 너머의 컨시어지</span>가 관리해 드립니다.
+                        <br>
+                        더블유클럽은 앱 서비스의 <span class="focus">편리함</span>에
+                        <br>
+                        컨시어지의 <span class="focus">확실한 관리</span>를 더했습니다.
+                      </div>
+                    </div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="200">
+                      <img src="/assets/images/banner-3.png">
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-8">
+                  <div class="section-inner">
+                    <div class="logo"><img src="/assets/images/logo-3.png"></div>
+                    <div class="title">더블유클럽의 <br class="visible-640">목표는 단 1가지</div>
+                    <div class="sub-title">능력, 매력, 인성이 검증된 남녀가 느끼는 <span class="focus">끌림</span>을 <span class="focus">만남</span>으로 만들어드리는 것.</div>
+                  </div>
+                </section>
+
+                <section class="section-9"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200">
+                      프라이빗한 1:1 매칭 서비스
+                    </div>
+                    <div class="title" data-aos="fade-up" data-aos-delay="200">
+                      더블유클럽의 컨시어지가 약속드립니다.
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-4.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            <div class="number">01</div>
+                            <span class="focus">여성분들, 하지 마세요.</span>
+                            <br>
+                            얼굴 팔릴 걱정.
+                          </div>
+                          <div class="desc">
+                            <div class="qna q">
+                              <span class="icon"><img src="/assets/images/Q.png"></span>
+                              제 얼굴, 모두에게 공개되나요?
+                            </div>
+                            <div class="qna a">
+                              <span class="icon"><img src="/assets/images/A.png"></span>
+                              더블유클럽의 컨시어지는
+                              <br>
+                              여성분이 OK할 때만 남성분에게 프로필을 전달합니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-9.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            <div class="number">02</div>
+                            <span class="focus">남성분들,</span> 내게 이미
+                            <br>
+                            <span class="focus">호감있는 여성분</span>과 매칭돼요.
+                          </div>
+                          <div class="desc">
+                            <div class="qna q">
+                              <span class="icon"><img src="/assets/images/Q.png"></span>
+                              여성분이 OK할 경우에만 소개받는다고?
+                              <br>
+                              그럼 매칭 확률이 줄어드는 것 아닌가요?
+                            </div>
+                            <div class="qna a">
+                              <span class="icon"><img src="/assets/images/A.png"></span>
+                              여성이 남성분에게 이미 어느정도 호감을 갖은 채로
+                              <br>
+                              매칭이 이루어진다는 뜻이기도 합니다.
+                              <br>
+                              매칭 만족도, 자연스레 올랐습니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-10.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            <div class="number">03</div>
+                            <span class="focus">약속파토?</span> 더블유클럽은
+                            <br>
+                            <span class="focus">100%만남을 보장</span>합니다.
+                          </div>
+                          <div class="desc">
+                            <div class="qna q">
+                              <span class="icon"><img src="/assets/images/Q.png"></span>
+                              상대방이 노쇼하면 어떡하죠?
+                              <br>
+                              외모/능력만 출중한 비매너인 사람이면 어떡해요?
+                            </div>
+                            <div class="qna a">
+                              <span class="icon"><img src="/assets/images/A.png"></span>
+                              고객관리는 엄격하게 이루어집니다.
+                              <br>
+                              2스트라이크 제도를 도입하여 비매너 고객은 영구제명합니다.
+                              <br>
+                              또한 모든 회원은 매칭 이후 컨시어지에게 피드백합니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-11.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            <div class="number">04</div>
+                            <span class="focus">과장된 포토샵? 가짜 서류?</span>
+                            <br>
+                            컨시어지가 잡아드려요.
+                          </div>
+                          <div class="desc">
+                            <div class="qna q">
+                              <span class="icon"><img src="/assets/images/Q.png"></span>
+                              사진과 실물이 아예 다른 사람 같으면 어떡하죠?
+                              <br>
+                              진짜 믿을만한 사람인가요?
+                            </div>
+                            <div class="qna a">
+                              <span class="icon"><img src="/assets/images/A.png"></span>
+                              더블유클럽의 컨시어지는 모든 프로필 사진과
+                              <br>
+                              서류 (부동산 등기서류, 근로소득 원천징수영수증,
+                              <br>
+                              졸업장, 전문직자격증 등)를 꼼꼼하게 검수합니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-12.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            <div class="number">05</div>
+                            첫 만남 후, 불만족 시
+                            <br>
+                            <span class="focus">100% 환불</span>해드려요.
+                          </div>
+                          <div class="desc">
+                            <div class="qna q">
+                              <span class="icon"><img src="/assets/images/Q.png"></span>
+                              진짜로 100% 만남 보장해주나요?
+                            </div>
+                            <div class="qna a">
+                              <span class="icon"><img src="/assets/images/A.png"></span>
+                              더블유클럽에서는 100% 만남이 보장됩니다.
+                              <br>
+                              상대방의 귀책사유로 인해 약속이 취소되거나,
+                              <br>
+                              첫 만남 이후 불만족 하실 경우, 100% 환불해드립니다.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-10">
+                  <div class="section-inner">
+                    <div class="sub-title">
+                      더블유클럽의 평균 회원 스펙
+                    </div>
+                    <div class="title">
+                      <span class="focus">남<span class="hidden-640">에게</span> 소개시켜주기 아까운 이성?</span> 여기에 다 모였어요.
+                    </div>
+                    <div class="tags-wrap">
+                      <div class="tags ladies">
+                        <div class="title">LADIES</div>
+                        <div class="tags-inner">
+                          <div class="tag">활발하게 활동중인 방송국 아나운서</div>
+                          <div class="tag">국내최고 유명 항공사 승무원</div>
+                          <div class="tag">미스코리아 출신 대학원생</div>
+                          <div class="tag">모델출신 유명 대기업 회사원</div>
+                          <div class="tag">유명 매거진에 활동하는 모델</div>
+                          <div class="tag">볼륨감있는 몸매의 모델 겸 쇼핑몰 CEO</div>
+                        </div>
+                      </div>
+                      <div class="tags mens">
+                        <div class="title">MENS</div>
+                        <div class="tags-inner">
+                          <div class="tag">연예인들도 자주 찾는 유명병원 대표원장 의사</div>
+                          <div class="tag">시가총액 3조 이상 상장법인 대표이사</div>
+                          <div class="tag">매출 3천억대 중견기업 가업승계 2세</div>
+                          <div class="tag">빌딩 소유 건물주, 부동산 사업하는 젊은 사업가</div>
+                          <div class="tag">세계 최상위 유명 글로벌 IT 대기업 임원</div>
+                          <div class="tag">미국 최고 IVY LEAGUE 유학파 출신 컨설턴트</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-11"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200">
+                      수준 높은 회원 Pool을 유지하는 비결
+                    </div>
+                    <div class="title" data-aos="fade-up" data-aos-delay="200">
+                      어떻게 검증된 남녀만 모여있나요?
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-5.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            1. 기존 회원분들의 자발적 ‘추천’
+                          </div>
+                          <div class="desc">
+                            사람은 자연스럽게 비슷한 사람끼리 어울려서 일까요?
+                            <br>
+                            기존 회원분들이 추천해주시는 분들은 대부분 저희 더블유클럽 조건에 부합하는 분들이십니다.
+                            <br>
+                            물론, 추천을 통해 오셨더라도 엄격한 인증 절차는 동일하게 진행됩니다.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                      <div class="image">
+                        <div class="image-inner">
+                          <img src="/assets/images/banner-6.png">
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="content-inner">
+                          <div class="title">
+                            2. W Club 전문 헤드헌터의 ‘스카웃’
+                          </div>
+                          <div class="desc">
+                            ‘이렇게 능력 있고 매력적인 분은 W Club에서 좋은 분 만날 수 있으실텐데.’
+                            <br>
+                            전문 소셜 헤드헌터가 다양한 SNS를 통해 커리어 및 외모를 검증한 뒤 초대해 드립니다.
+                            <br>
+                            또한, 전문직 / 사업자 / 유학파 모임 등 프라이빗 네트워크에서 스카웃합니다.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-12"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="sub-title">
+                      더블유클럽 매칭 과정
+                    </div>
+                    <div class="title">
+                      더블유클럽에 가입하는 방법
+                    </div>
+                    <div class="card-group">
+                      <div class="card">
+                        <div class="number">1</div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="title">
+                              더블유클럽 앱 다운받기
+                            </div>
+                            <div class="desc">
+                              하단의 <span class="focus">더블유클럽 앱 다운받기</span>를
+                              <br>
+                              클릭한 뒤 앱을 설치해 주세요.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <div class="image-inner">
+                            <img src="/assets/images/phone-2.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="number">2</div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="title">
+                              프로필 정성껏 작성하기
+                            </div>
+                            <div class="desc">
+                              자기소개글을 정성껏 작성해 주시고, 
+                              <br>
+                              인증 서류, 사진, 셀피 동영상 등
+                              <br>
+                              <span class="focus">필수 서류를 첨부해 주세요.</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <div class="image-inner">
+                            <img src="/assets/images/phone-3.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="number">3</div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="title">
+                              컨시어지의 매칭 기다리기
+                            </div>
+                            <div class="desc">
+                              승인이 되시면, 이후 과정은
+                              <br>
+                              <span class="focus">컨시어지에게 맡겨주세요.</span>
+                              <br>
+                              검증된 이성을 매칭해드립니다.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="image">
+                          <div class="image-inner">
+                            <img src="/assets/images/phone-4.png">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-13"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                  <div class="section-inner">
+                    <div class="sub-title" data-aos="fade-up" data-aos-delay="200">
+                      더블유클럽 FAQ
+                    </div>
+                    <div class="title" data-aos="fade-up" data-aos-delay="200">
+                      가장 핫한 질문들
+                    </div>
+                    <div class="card-group" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card">
+                        <div class="title">
+                          <div class="title-inner">
+                            FOR MAN
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="desc">
+                              <div class="qna q">
+                                Q. 가입비가 있나요?
+                              </div>
+                              <div class="qna a">
+                                A. 아니요. 별도의 가입비가 없습니다. 남성 회원은 최초 1회이상의 만남을 위한 ‘만남권' 티켓을 충전하신 후 기다려 주시면 만남보장 매칭을 준비하여 제안드립니다.
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 만남권 1회 비용이 99,000원이 맞나요? 어떤 서비스가 포함되어 있나요?
+                              </div>
+                              <div class="qna a">
+                                A. 네 맞습니다. 소개해드린 여성 회원분과의 만남을 ‘수락' 하실 경우 약속을 잡아드리는 비용까지 포함되어 있습니다. 
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 상대방의 약속 취소로 못만나게 되면 정말 100% 환불해 주나요?
+                              </div>
+                              <div class="qna a">
+                                A. 네 맞습니다. 더블유클럽은 100% 만남을 보장합니다. 만약 상대방의 귀책사유로 약속이 취소되면, 100% 환불해 드립니다. 단, 서로 협의하여 약속일이 변경된 경우에는 만남으로 인정됩니다.
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 만난 이후에 마음에 들지 않은 경우에는 어떻게 하나요?
+                              </div>
+                              <div class="qna a">
+                                A. 만약 다른 여성 회원분과의 만남을 원하시는 경우 추가적으로 ‘만남권'을 충전해 주시면 됩니다. 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="card">
+                        <div class="title">
+                          <div class="title-inner">
+                            FOR WOMAN
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="desc">
+                              <div class="qna q">
+                                Q. 가입비가 있나요?
+                              </div>
+                              <div class="qna a">
+                                A. 아니요. 별도의 가입비가 없습니다. 여성회원은 초대를 통해 프로필 심사를 마친 후 만남을 위한 기본 크레딧이 지급됩니다.
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 남성분들 신분 인증은 확실한가요?
+                              </div>
+                              <div class="qna a">
+                                A. 네 확실합니다. W Club은 국내에서 가장 까다로운 조건을 두고 있습니다. 남성 회원분들의 경우, 신분증, 명함, 소득 및 자산 인증까지 3단계에 걸쳐 검증을 진행하고 있습니다.
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 사진을 비공개한 남성 회원분은 어떤 경우 인가요?
+                              </div>
+                              <div class="qna a">
+                                A. 경제력 상위 회원의 경우 신분 노출이 어려운 경우가 있습니다. 이 경우에는 사진을 비공개한 상태로 약속을 잡아드리게 됩니다. 약속장소에서 직접 상대를 만나시고 대화를 나눠보실 수 있습니다.
+                              </div>
+    
+                              <div class="qna q">
+                                Q. 초대받고 승인된 여성은 무료로 만남이 가능한가요?
+                              </div>
+                              <div class="qna a">
+                                A. 네 맞습니다. W Club 헤드헌터의 특별초대 또는 직접 초대신청 후 초대코드를 받으신 여성분은 정식 프로필 심사 후 무료만남 지원 크레딧을 제공해 드립니다. 만남이 지속될수록 크레딧을 추가로 지급해 드립니다.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-14">
+                  <div class="section-inner">
+                    <div class="logo"><img src="/assets/images/logo-3.png"></div>
+                    <div class="sub-title">
+                      한분한분 소중한 만남을 선물해 드리기 위해
+                      <br>
+                      꼼꼼한 심사가 진행되고 있습니다.
+                    </div>
+                    <div class="title">
+                      신청하시더라도 대기 시간이 <br class="visible-640">발생할 수 있다는 점<span class="rest">,</span> <br class="visible-1080">양해부탁드립니다.
+                    </div>
+                    <div class="btn-group">
+                      <button onclick="moveToAppLink()">더블유클럽 앱 다운로드</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section-15">
+                  <div class="section-inner">
+                    <div class="card-group">
+                      <div class="card">
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="sub-title">
+                              2021년 조선일보 제 14회
+                            </div>
+                            <div class="title">
+                              앱어워드코리아 2021
+                              <br>
+                              결혼정보부문 올해의 앱 선정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="content">
+                          <div class="content-inner">
+                            <div class="sub-title">
+                              W CLUB
+                            </div>
+                            <div class="title">
+                              업계 최초 TVCF 론칭
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-inner">
+              <div class="footer-content"> <!--max-width: 1040px >> 1920-((360+80) *2)-->
+                <div class="logo-n-topbtn">
+                  <div class="logo-n-topbtn-inner">
+                    <img src="/assets/images/logo-4.png">
+                    <div class="flex-divider"></div>
+                    <div class="topbtn" onclick="goTop()">Top</div>
+                  </div>
+                </div>
+                <div class="contact-us">
+                  <div class="contact-us-inner">
+                    <div class="title">Contact Us</div>
+                    <div class="content">대표번호 : +82215664255 | 이메일 : concierge@wclub.co.kr<span class="hidden-920"> | </span><br class="visible-920">주소 :서울특별시 강남구 선릉로 428 WeWork</div>
+                  </div>
+                </div>
+                <div class="work-hour">
+                  <div class="work-hour-inner">
+                    <div class="title">Work hour</div>
+                    <div class="content">월 - 금 10AM - 6PM</div>
+                  </div>
+                </div>
+                <div class="copyright">
+                  <div class="copyright-inner">
+                    Copyright ⓒ W club All rights reserved.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      AOS.init({
+        duration:700,
+        easing:"ease-out-quad"
+      });
+      
+      window.addEventListener('load', AOS.refresh);
+    });
+
+    var isMobile = {
+      Android: function() {
+        return navigator.userAgent.match(/Android/i);
+      },
+      iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+    };
+
+    function moveToAppLink() {
+      if (isMobile.iOS()) {
+        window.open('https://wclub.co.kr/iosstore','_blank');
+      } else if (isMobile.Android()) {
+        window.open('https://wclub.co.kr/androidstore','_blank');
+      } else {
+        window.open('https://wclub.co.kr/wman/requirements','_blank');
+      }
+    }
+
+    var curSlide = 0;
+    var slideNum = 4;
+    function prevCard() {
+      curSlide -= 1;
+      if (curSlide < 0) {
+        curSlide = slideNum - 1;
+      }
+      $('.slider .slide').removeClass('active');
+      $('.slider .slide').eq(curSlide).addClass('active');
+    }
+    function nextCard() {
+      curSlide += 1;
+      if (curSlide >= slideNum) {
+        curSlide = 0;
+      }
+      $('.slider .slide').removeClass('active show');
+      $('.slider .slide').eq(curSlide).addClass('active');
+      setTimeout(function () {
+        $('.slider .slide').eq(curSlide).addClass('show');
+      }, 0);
+    }
+
+    function goTop () {
+      $('html, body').animate({ scrollTop: 0 }, 1000);
+    }
+</script>
+</body>
+
+</html>
