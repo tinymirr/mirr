@@ -216,7 +216,7 @@
 
 .section-5 .section-inner .intro-sample .card-group .card .image { margin-top: 40px; font-size: 0; }
 
-.section-5 .section-inner .intro-sample .card-group .card .image .image-inner { position: relative; display: inline-block; }
+.section-5 .section-inner .intro-sample .card-group .card .image .image-inner { position: relative; display: inline-block; width:300px}
 
 .section-5 .section-inner .intro-sample .card-group .card .image .image-inner img.sub { position: absolute; width:168px; top: 50%; right: 0; -webkit-transform: translate(35%, -25%); transform: translate(35%, -25%); }
 
