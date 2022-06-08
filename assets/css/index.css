@@ -222,7 +222,7 @@
 
 @media screen and (max-width: 520px) { .section-5 .section-inner .intro-sample .card-group .card .image .image-inner img.sub { -webkit-transform: translate(25%, -25%); transform: translate(25%, -25%); width: 40%; } }
 
-.section-5 .section-inner .intro-sample .card-group .card .image .image-inner img.sub-2 { position: absolute; width:168px; top: 50%; right: 0; -webkit-transform: translate(45%, -25%); transform: translate(45%, -25%); }
+.section-5 .section-inner .intro-sample .card-group .card .image .image-inner img.sub-2 { position: absolute; width:246px; top: 50%; right: 0; -webkit-transform: translate(45%, -25%); transform: translate(45%, -25%); }
 
 @media screen and (max-width: 520px) { .section-5 .section-inner .intro-sample .card-group .card .image .image-inner img.sub-2 { -webkit-transform: translate(30%, -25%); transform: translate(30%, -25%); width: 60%; } }
 
